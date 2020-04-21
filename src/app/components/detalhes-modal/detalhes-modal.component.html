@@ -1,0 +1,32 @@
+<div class="modal-header">
+    <h4 class="modal-title">Media</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+</div>
+
+<div class="modal-body">
+    <div class="container col-xl-12 ">
+        <div class="row justify-content-md-center">
+
+            <div class="card border-dark  mb-3 col-xl-11">
+                <div class="card-header  ">{{mediaCharacters[0].data.type.toString()[0].toUpperCase()+mediaCharacters[0].data.type.toString().slice(1)}} - {{mediaCharacters[0].data.attributes.titles.en_jp}}</div>
+
+                <div class="row">
+                    <div class="card col-sm-6 border-dark col-md-offset-2   " *ngFor="let item of mediaCharacters">
+                        <img class="card-img-top" src="{{item.data.attributes.posterImage.original}}" alt="Card image cap">
+                        <div class="card-body dark ">
+                            <h5 class="card-title"> {{mediaCharacters[0].data.attributes.canonicalTitle}}</h5>
+                            <p class="card-text">
+                                <span innerHTML='{{item.data.attributes.synopsis}}...'></span> </p>
+                            <p class="card-text" *ngIf="item.data.attributes.volumeCount>0&& item.data.attributes.volumeCount>0"><small class="text-muted">Volume:{{item.data.attributes.volumeCount}} - Chapter:{{item.data.attributes.chapterCount}}</small></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+</div>

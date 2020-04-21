@@ -1,0 +1,127 @@
+    @media all and (min-width: 320px) {
+        .margem {
+            margin-left: 42px;
+            margin-right: 42px;
+            margin-top: 20px;
+            margin-bottom: 16px;
+        }
+        .label {
+            display: block;
+        }
+        .label-personagem {
+            color: #D42026;
+            font-size: 16px;
+        }
+        .input-personagem {
+            padding: 8px 8px;
+            margin: 2px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 400px;
+            height: 31px;
+            border-color: #00000085;
+            display: block;
+        }
+        .title {
+            padding-bottom: 34px;
+        }
+        .table-a {
+            width: 100%;
+            padding-top: 34px;
+            border-collapse: separate;
+        }
+        td.header {
+            text-align: start;
+            padding-left: 25px;
+            height: 37px;
+            background-color: #d42026;
+            color: white;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        img {
+            border-radius: 50%;
+            background-color: blue;
+            color: blue;
+            max-width: 75px;
+        }
+        .al {
+            align-items: center;
+            text-align: center;
+        }
+        .avatar {
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            margin-left: 4px;
+        }
+        .label-spacing {
+            padding-left: 4px;
+        }
+        span::before {
+            content: "\A";
+            white-space: pre;
+        }
+        th {
+            font-size: 16px;
+            opacity: 100%;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+        .page-item {
+            margin-left: 20px;
+        }
+        header {
+            color: white;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        .col-personagem {
+            width: 40%;
+            color: white;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        tr:hover {
+            background-color: #cee7eb;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: white;
+        }
+        .table-striped tbody tr:nth-of-type(odd):hover {
+            background-color: #cee7eb;
+        }
+        .page-item.active .page-link {
+            z-index: 3;
+            color: #fff;
+            background-color: #f90a0a;
+            border-color: #007bff;
+        }
+        @media all and (min-width: 319px) and (max-width: 799px) {
+            td.col_3 {
+                display: none;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                visibility: collapse
+            }
+            /* http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml  usei como referencia*/
+        }
+        .title {
+            color: #D42026;
+            font-weight: 600;
+            font-size: 27px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+    }

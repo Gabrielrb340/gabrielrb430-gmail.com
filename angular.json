@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "Heroes"
+  "defaultProject": "Heroes",
+  "cli": {
+    "analytics": "a06c72dc-5711-434d-94ae-7e7f9ca62cde"
+  }
 }

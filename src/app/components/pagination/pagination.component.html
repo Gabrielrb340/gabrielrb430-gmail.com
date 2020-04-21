@@ -1,0 +1,8 @@
+<div class="pagination justify-content-md-center ">
+    <div class=" col justify-content-md-center ">
+        <a class="fas fa-backward icon-color-padding-left" (click)="pageClick(undefined,false,false) "></a>
+        <a class=" pagination page " *ngFor="let item of pages " [ngClass]="(item==selectedItem)? 'active': 'disabled' " (click)="pageClick(item) ">{{item}}</a>
+        <a class="fas fa-forward icon-color-padding " (click)="pageClick(undefined,false) "></a>
+    </div>
+
+</div>
